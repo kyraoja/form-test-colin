@@ -12,36 +12,25 @@
     <div class="row">
       <div class="columns large-6">
           
-       <form action="">
-         
-          <label>Name
-            <input type="text" placeholder="Enter Yo Name!">
-          </label>
-
-          <p>Choose Your Favorite</[label]>
-          
-          <input type="radio" name="pokemon" value="Green" id="pokemonGreen">
-          <label for="pokemonGreen">GREEN</label>
-          
-          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label> 
-          
-
-          <div class="row collapse">
-            
-            <!-- Attached Label -->
-            <div class="small-3 large-2 columns">
-              <span class="prefix">YO! Website!</span>
-            </div>
-            <!-- Field -->
-            <div class="small-9 large-10 columns">
-              <input type="text" placeholder="Enter your URL...">
+       <form data-abide>
+            <div class="name-field">
+              <label>Your name <small>required</small>
+                <input type="text" required pattern="[a-zA-Z]+">
+              </label>
+              <small class="error">Name is required and must be a string.</small>
             </div>
 
-          </div>  
+            <div class="email-field">
+              <label>Email <small>required</small>
+                <input type="email" required>
+              </label>
+              <small class="error">An email address is required.</small>
+            </div>
+            <button type="submit">Submit</button>
+      </form>
+        
 
-          <input type="submit">
 
-       </form> 
           
       </div>
     </div>
